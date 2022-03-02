@@ -20,18 +20,14 @@ export const NoteCreator = ({
 
     return (
         <div className="add">
-            <div>
-                <input 
-                    className="input"
-                    type="text" 
-                    value={text} 
-                    onChange={handleChange}
-                    placeholder="A NEW TO-DO HERE"
-                />
-            </div>
-            <div>
-                <img className="add-btn" onClick={onSubmit} src={ButtonSvg} alt="add" />
-            </div>
+            <input 
+                className="input"
+                type="text" 
+                value={text} 
+                onChange={handleChange}
+                placeholder="A NEW TO-DO HERE"
+            />
+            <img className="add-btn" onClick={onSubmit} src={ButtonSvg} alt="add" />
         </div>
     )
 }

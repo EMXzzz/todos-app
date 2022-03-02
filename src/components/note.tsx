@@ -1,11 +1,17 @@
+import "./note-creator.css"
+
 interface Props {
     note: string;
-    key: number;
+    number: number;
 }
 
-export const Note = ({note}: Props) => (
-    <div>
-        {note}
-    </div>
+export const Note = ({
+    note, 
+    number,
+}: Props) => (
+    <li className="note">
+        {`${number}. ${note}`}
+    </li>
 )
+
     

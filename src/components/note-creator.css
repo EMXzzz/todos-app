@@ -1,13 +1,17 @@
 .title {
     font-size: 72px;
-    padding-left: 40px;
-    padding-top: 30px;
 }
 
 .noteContainer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.note {
+    padding: 10px;
+    margin: 10px;
+    width: 55%;
 }
 
 .add {
@@ -18,7 +22,7 @@
 }
 
 .input {
-    width: 100%;
+    width: 60%;
     height: 70px;
     background-color:#222222;
     border-radius: 15px;
@@ -26,7 +30,7 @@
     text-indent: 15px;
 }
 
-.add-btn:hover {
+.add-btn {
     cursor: pointer;
 }
 
