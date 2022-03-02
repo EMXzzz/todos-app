@@ -1,15 +1,15 @@
-import { useState } from "react"
+import {useState} from "react"
 import {NoteCreator} from "./components/note-creator"
 
 export const App = () => {
-  const [noteText, setNoteText] = useState<string>('')
+    const [noteText, setNoteText] = useState<string>('')
 
-  return (
+return (  
     <div>
-      <NoteCreator 
-        text={noteText}
-        onChange={setNoteText}
-      />
+        <NoteCreator 
+            text={noteText}
+            onChange={setNoteText}
+        />
     </div>
   )
 }
