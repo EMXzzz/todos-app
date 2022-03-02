@@ -1,6 +1,6 @@
 import {ChangeEvent} from "react";
 import ButtonSvg from './image/add-button.svg'
-import "./note-creator-styles.css"
+import "./note-creator.css"
 
 interface Props {
     text: string,
