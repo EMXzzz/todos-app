@@ -1,6 +1,6 @@
 import {useState} from "react";
 import {NoteCreator} from "./components/note-creator";
-import "./components/note-creator-styles.css"
+import './app.css'
 
 export const App = () => {
     const [noteText, setNoteText] = useState<string>('')

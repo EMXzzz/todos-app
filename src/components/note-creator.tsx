@@ -1,5 +1,6 @@
 import {ChangeEvent} from "react";
 import ButtonSvg from './image/add-button.svg'
+import "./note-creator-styles.css"
 
 interface Props {
     text: string,
@@ -25,7 +26,7 @@ export const NoteCreator = ({
                     type="text" 
                     value={text} 
                     onChange={handleChange}
-                    placeholder={"A NEW TO-DO HERE"} 
+                    placeholder="A NEW TO-DO HERE"
                 />
             </div>
             <div>
