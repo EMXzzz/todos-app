@@ -1,5 +1,4 @@
 import {ChangeEvent} from "react";
-import './note-creator-styles.modules.css';
 import ButtonSvg from './image/add-button.svg'
 
 interface Props {

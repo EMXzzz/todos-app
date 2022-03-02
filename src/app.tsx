@@ -1,5 +1,7 @@
 import {useState} from "react";
 import {NoteCreator} from "./components/note-creator";
+import "./components/note-creator-styles.css"
+
 export const App = () => {
     const [noteText, setNoteText] = useState<string>('')
     const [addNote, setAddNote] = useState<string[]>([])
@@ -12,13 +14,13 @@ export const App = () => {
 return (  
     <div className="app">
         <h1 className="title">TO-DO</h1>
-        <div className="noteContainer">
-            <NoteCreator 
-                text={noteText}
-                onChange={setNoteText}
-                onSubmit={handleSubmit}
-            />
-        </div>
+            <div className="noteContainer">
+                <NoteCreator 
+                    text={noteText}
+                    onChange={setNoteText}
+                    onSubmit={handleSubmit}
+                />
+            </div>
         
     </div>
   )

@@ -3,8 +3,9 @@ interface Props {
     key: number;
 }
 
-export const Note = ({note}: Props) => {
+export const Note = ({note}: Props) => (
     <div>
         {note}
     </div>
-}
+)
+    

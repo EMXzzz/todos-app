@@ -6,6 +6,9 @@
 
 .title {
     font-size: 72px;
+    position: relative;
+    top: 15px;
+    left: 15px;
 }
 
 .noteContainer {
@@ -16,22 +19,25 @@
 }
 
 .add {
-    width: 80vw;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
     position: relative;
     bottom: 295px;
 }
 
 .input {
-    width: 60vw;
+    width: 130%;
     height: 70px;
     background-color:#222222;
     border-radius: 15px;
     font-size: 33px;
+    text-indent: 15px;
 }
 
+.add-btn:hover {
+    cursor: pointer;
+}
 
 
