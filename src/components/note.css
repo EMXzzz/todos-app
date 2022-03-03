@@ -1,0 +1,14 @@
+.note {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    outline: 2px solid #222222;
+    border-radius: 10px;
+    word-break: break-all;
+}
+
+.deleteBtn {
+    cursor: pointer;
+}

@@ -1,6 +1,9 @@
-import {ChangeEvent} from "react";
-import ButtonSvg from './image/add-button.svg'
-import "./note-creator.css"
+import {
+    ChangeEvent, 
+    SyntheticEvent,
+} from "react";
+
+import "./note-creator.css";
 
 interface Props {
     text: string,
@@ -14,12 +17,20 @@ export const NoteCreator = ({
     onSubmit,
 }: Props) => {
 
-    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-        onChange(e.target.value)
+    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+        onChange(event.target.value)
+    }
+
+    const handleSubmit = (event: SyntheticEvent) => {
+        event.preventDefault()
+        onSubmit()
     }
 
     return (
-        <div className="add">
+        <form 
+            onSubmit={handleSubmit}
+            noValidate
+        >
             <input 
                 className="input"
                 type="text" 
@@ -27,7 +38,6 @@ export const NoteCreator = ({
                 onChange={handleChange}
                 placeholder="A NEW TO-DO HERE"
             />
-            <img className="add-btn" onClick={onSubmit} src={ButtonSvg} alt="add" />
-        </div>
+        </form>
     )
 }

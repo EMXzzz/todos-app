@@ -1,37 +1,9 @@
-.title {
-    font-size: 72px;
-}
-
-.noteContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.note {
-    padding: 10px;
-    margin: 10px;
-    width: 55%;
-}
-
-.add {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .input {
-    width: 60%;
     height: 70px;
     background-color:#222222;
     border-radius: 15px;
     font-size: 33px;
     text-indent: 15px;
+    color: #F3DA54;
+    width: 95%;
 }
-
-.add-btn {
-    cursor: pointer;
-}
-
-
