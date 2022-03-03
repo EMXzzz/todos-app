@@ -1,0 +1,18 @@
+.app {
+    background-color:#F3DA54;
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerCreator {
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.containerNotes {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
